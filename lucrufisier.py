@@ -10,6 +10,8 @@ def main():
     cuvinte=continut.split()
     rezultat=" ".join([c for c in cuvinte if len(c)>4])
 
+    rezultat=rezultat.lower()
+
     f.close()
     f=open("fisiertest.txt","w")
 
