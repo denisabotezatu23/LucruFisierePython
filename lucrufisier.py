@@ -17,6 +17,12 @@ def main():
 
 
     f.write(rezultat)
+    f.close()
+
+    f=open("fisiertest.txt","r")
+    rezultat=f.read()
+    print(rezultat)
+    f.close()
 
 
 if __name__ == "__main__":
